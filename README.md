@@ -106,6 +106,17 @@ Se parte de los ficheros **fuente en verilog** (.v). Usando el sintetizador **Yo
 
 Podemos elegir entre usar Verilog o un diseño visual
 
+
+#### [ICEStudio](https://github.com/FPGAwars/icestudio)
+
+![icono](https://raw.githubusercontent.com/FPGAwars/icestudio/develop/doc/images/icestudio-logo.ico)
+
+![icestudio](https://github.com/FPGAwars/icestudio/blob/develop/doc/images/icestudio-0.2-project.png?raw=true)
+
+Descargarmos la [última release](https://github.com/FPGAwars/icestudio/releases)
+
+##### [Ejemplos](https://github.com/Obijuan/myslides/tree/master/2016-11-18-Maker-faire-Bilbao-FPGAs-libres/demos)
+
 ### Ejemplos
 
 * [Ejemplos de iceZum](https://github.com/FPGAwars/icezum/tree/master/examples)
