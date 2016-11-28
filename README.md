@@ -69,6 +69,9 @@ Podemos modificar el comportamiento de una FPGA cambiando su bitstream, por tant
 
 * Facilitan enórmemente la paralelización del hardware.
 
+* Encoder para 1 rueda: programación vía interrupciones, necesitamos 2 entradas con interrupción. Si ahora necesitamos 4....
+
+
 ### Un poco de historia
 
 Hasta hace poco la única forma de trabajar con una FPGA era usando el sortware que proporcionaba el fabricante.
@@ -204,3 +207,4 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 ¿configuración de teclado de iceStudio?
 ¿Enable driver?
 ¿Pull up?
+¿bloques?
