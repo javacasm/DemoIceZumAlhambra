@@ -27,8 +27,13 @@ Es una placa totalmente [libre (Open Hardware)](https://github.com/FPGAwars/icez
 
 ([Historia](https://github.com/FPGAwars/icezum#history))
 
+
+
 ## ¿FPGA?
 
+[Field Programmable Gate Array](https://es.m.wikipedia.org/wiki/Field_Programmable_Gate_Array)
+
+![FPGA](http://www.nextplatform.com/wp-content/uploads/2015/03/fpga_384.jpg)
 
 ### ¿Qué es una FPGA?
 
@@ -113,6 +118,12 @@ Se parte de los ficheros **fuente en verilog** (.v). Usando el sintetizador **Yo
 
   ![pinout](https://github.com/FPGAwars/icezum/raw/master/doc/pinout/icezum-pinout.png)
 
+### ¿Cómo funciona?
+
+Las FPGAs pierden su configuración (bitstream) cada vez que se apagan.
+
+Cuando escribimos el bitstream, este se almacena en una memoria ¿RAM flash? y desde ahí cada vez que se resetea se envía a la FPGA
+
 ## Uso
 
 ### Herramientas
@@ -134,11 +145,21 @@ Descargarmos la [última release](https://github.com/FPGAwars/icestudio/releases
 
 * [Ejemplos de iceZum](https://github.com/FPGAwars/icezum/tree/master/examples)
 
+* [Procesador simplez](https://github.com/Obijuan/simplez-fpga)
+
+* [Procesador ACC (procesador de las naves Apolo, sí las de la Luna)](https://github.com/Obijuan/ACC)
+
+* [Periférico](https://github.com/FPGAwars/FPGA-peripherals)
+
+
 ### Instalación
+
+## Placas disponibles
 
 ## Mucho trabajo por hacer
 
 * Mejora del software
+* Optimización en MS Windows
 * Implementación hardware de un periferico I2C
 * Implementación del protocolo I2C para el ADC
 * Implementación de bloques generales
@@ -164,3 +185,8 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 * [Juan Gonzalez Obijuan FPGAWars Explorando el lado libre de las FPGAs](https://www.youtube.com/watch?v=rdlEpW_Ce5g)
 
 * [Vídeos sober FPGAs de @Obijuan](https://www.youtube.com/user/obijuancube/videos)
+
+
+## Limitaciones
+
+¿Hay un número máximo de reescrituras?: [La limitación está en el número máximo de reescrituras de la memoria que se usa](http://digital.ni.com/public.nsf/allkb/91DE0C3B7740C287862574D300646369)
