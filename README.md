@@ -71,12 +71,16 @@ Podemos modificar el comportamiento de una FPGA cambiando su bitstream, por tant
 
 * Encoder para 1 rueda: programación vía interrupciones, necesitamos 2 entradas con interrupción. Si ahora necesitamos 4....
 
+## "Las FPGAs son las impresoras 3D de los circuitos digitales"
+
 
 ### Un poco de historia
 
 Hasta hace poco la única forma de trabajar con una FPGA era usando el sortware que proporcionaba el fabricante.
 
 En **mayo de 2015** ocurrió un **hito histórico**: se tuvieron por primera vez todas las herramientas necesarias para **generar el bitstream** a partir de **código en Verilog** usando **sólo software libre**, gracias al [proyecto icestorm](http://www.clifford.at/icestorm/), liderado por **Clifford Wolf**.  A partir de ese momento,ya tenemos herramientas que pertenecen al **patrimonio tecnológico de la humanidad** para trabajar con FPGAs, y poder desarrollar hardware usando sólo herramientas de este patrimonio
+
+Actualmente sólo se pueden usar las FPGAs de Lattice de la familia ICE40
 
 ### Las herramientas del proyecto Icestorm
 
@@ -129,19 +133,38 @@ Cuando escribimos el bitstream, este se almacena en una memoria ¿RAM flash? y d
 
 ## Placas
 [Icezum Alhambra](https://github.com/FPGAwars/icezum)
+
 [Nandland Go board](https://www.nandland.com/goboard/introduction.html)
+
+![go board](./images/Go-board.jpg)
+
 [iCEstick Evaluation Kit](http://www.pighixxx.com/test/portfolio-items/icestick/)
+
+![icestick](images/IceStick.png)
+
 [iCE40-HX8K Breakout Board](http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx)
+
+![ice40 Breakout](./images/ICE40-HX8k-Breakout Board.png)
+
 [icoBOARD 1.0](http://icoboard.org/about-icoboard.html)
+
+![icoboard](./images/IcoBoard.png)
+
 [CAT Board](https://hackaday.io/project/7982-cat-board)
+
+![catboard](https://hackadaycom.files.wordpress.com/2015/10/cat-board.jpg?w=800)
+
 [Kéfir I](http://fpgalibre.sourceforge.net/Kefir/)
+
+![kefir](http://fpgalibre.sourceforge.net/imagenes/Kefir_I_top_585.jpg)
 
 ## Uso
 
 ### Herramientas
 
+![pila Apio](./images/Pila_apio.png)
 
-Podemos elegir entre usar Verilog o un diseño visual
+Podemos elegir entre usar Verilog o un diseño visual, entre usar heramientas de bajo nivel o trabajar a un nivel más alto.
 
 #### [Apio](http://apiodoc.readthedocs.io/en/stable/source/installation.html)
 
@@ -192,6 +215,8 @@ Y lo enviamos a la placa con
 
 
 #### [Apio IDE](https://github.com/FPGAwars/apio-ide/wiki)
+
+![apio ide](https://i.github-camo.com/f9636865a958658c05babb384e4bcff7e6a4a95d/68747470733a2f2f6769746875622e636f6d2f46504741776172732f6170696f2d6964652f7261772f6d61737465722f646f632f6170696f2d6964652d73637265656e73686f742d312e706e67)
 
 Se trata de un paquete de Atom que permite integrar Apio en PlatformIDE
 
@@ -270,8 +295,6 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 ## Dudas
 
 ¿configuración de accesso rápido por  teclado de iceStudio?
-
-¿Qué hace Enable driver?
 
 ¿Configuración Pull up?
 
