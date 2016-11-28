@@ -124,6 +124,8 @@ Las FPGAs pierden su configuración (bitstream) cada vez que se apagan.
 
 Cuando escribimos el bitstream, este se almacena en una memoria ¿RAM flash? y desde ahí cada vez que se resetea se envía a la FPGA
 
+## Placas
+
 ## Uso
 
 ### Herramientas
@@ -149,8 +151,13 @@ Descargarmos la [última release](https://github.com/FPGAwars/icestudio/releases
 
 * [Procesador ACC (procesador de las naves Apolo, sí las de la Luna)](https://github.com/Obijuan/ACC)
 
-* [Periférico](https://github.com/FPGAwars/FPGA-peripherals)
+* [Periféricos](https://github.com/FPGAwars/FPGA-peripherals)
 
+* [Ejemplos de IceZum Studio](https://github.com/FPGAwars/icestudio-examples)
+
+* Cómo migrar un ejemplo entre placas
+
+* Creando bloques
 
 ### Instalación
 
@@ -190,3 +197,10 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 ## Limitaciones
 
 ¿Hay un número máximo de reescrituras?: [La limitación está en el número máximo de reescrituras de la memoria que se usa](http://digital.ni.com/public.nsf/allkb/91DE0C3B7740C287862574D300646369)
+
+
+## Dudas
+
+¿configuración de teclado de iceStudio?
+¿Enable driver?
+¿Pull up?
