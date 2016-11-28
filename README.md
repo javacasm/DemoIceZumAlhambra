@@ -128,13 +128,76 @@ Las FPGAs pierden su configuración (bitstream) cada vez que se apagan.
 Cuando escribimos el bitstream, este se almacena en una memoria ¿RAM flash? y desde ahí cada vez que se resetea se envía a la FPGA
 
 ## Placas
+[Icezum Alhambra](https://github.com/FPGAwars/icezum)
+[Nandland Go board](https://www.nandland.com/goboard/introduction.html)
+[iCEstick Evaluation Kit](http://www.pighixxx.com/test/portfolio-items/icestick/)
+[iCE40-HX8K Breakout Board](http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx)
+[icoBOARD 1.0](http://icoboard.org/about-icoboard.html)
+[CAT Board](https://hackaday.io/project/7982-cat-board)
+[Kéfir I](http://fpgalibre.sourceforge.net/Kefir/)
 
 ## Uso
 
 ### Herramientas
 
+
 Podemos elegir entre usar Verilog o un diseño visual
 
+#### [Apio](http://apiodoc.readthedocs.io/en/stable/source/installation.html)
+
+![apio](https://github.com/FPGAwars/apio-ide/raw/master/doc/apio-ide-logo.png)
+
+Paquete python que utiliza las herramientas Icestorm
+
+    sudo pip install -U apio
+
+(instalación global, se puede hacer también local con virtualenv)
+
+Apio incluye sus propios drivers del chip FTDI, necesarios para su buen funcionamiento.
+Para activarlos
+
+    sudo apio drivers --enable
+
+Ahora instalamos la toolchain necesaria
+
+    apio install -all
+
+Ya lo tenemos listo para hacer cualquier operación
+
+Creamos un nuevo proyecto:
+
+    apio examples -d leds
+    cd leds
+
+Ahora creamos la configuración para nuestra placa
+
+    apio init --board icezum
+
+Comprobamos que el proyecto está ok
+
+    apio verify
+
+Si tenemos instalado algún simulador (GTKWave)
+
+    apio sim
+
+Cuando estemos conformes con el resultado, sintetizamos el bitstream
+
+    apio build
+
+Y lo enviamos a la placa con
+
+
+    apio upload
+
+
+#### [Apio IDE](https://github.com/FPGAwars/apio-ide/wiki)
+
+Se trata de un paquete de Atom que permite integrar Apio en PlatformIDE
+
+Una vez instalado Apio, instalamos Atom
+
+Después instalamos el paquete Apio-ide que configuramos para que encuentre a Apio
 
 #### [ICEStudio](https://github.com/FPGAwars/icestudio)
 
@@ -194,7 +257,9 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 
 * [Juan Gonzalez Obijuan FPGAWars Explorando el lado libre de las FPGAs](https://www.youtube.com/watch?v=rdlEpW_Ce5g)
 
-* [Vídeos sober FPGAs de @Obijuan](https://www.youtube.com/user/obijuancube/videos)
+* [Vídeos sobre FPGAs de @Obijuan](https://www.youtube.com/user/obijuancube/videos)
+
+* [Definición Verilog de CI TTL](https://github.com/taw/ttl-cpu/tree/master/verilog)
 
 
 ## Limitaciones
@@ -204,7 +269,10 @@ Puedes ver los proyectos actuales y la documentación sobre las [charlas](https:
 
 ## Dudas
 
-¿configuración de teclado de iceStudio?
-¿Enable driver?
-¿Pull up?
-¿bloques?
+¿configuración de accesso rápido por  teclado de iceStudio?
+
+¿Qué hace Enable driver?
+
+¿Configuración Pull up?
+
+¿Cómo se crean losbloques?
