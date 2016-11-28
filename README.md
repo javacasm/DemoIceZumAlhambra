@@ -12,7 +12,9 @@
 ## IceZum Alhambra
 
 
-Es una placa totalmente [libre](https://github.com/FPGAwars/icezum) que incluye una FPGA en un formato similar a Arduino
+![iceZum Alhambra](https://github.com/FPGAwars/icezum/raw/master/wiki/V1.1-RC1/icezum-alhambra-v1.1.jpg)
+
+Es una placa totalmente [libre (Open Hardware)](https://github.com/FPGAwars/icezum) que incluye una FPGA en un formato totalmente compatible  con Arduino
 
 ## Orígenes
 
@@ -27,7 +29,6 @@ Es una placa totalmente [libre](https://github.com/FPGAwars/icezum) que incluye 
 
 ## ¿FPGA?
 
-Las FPGAs no se programa, se reconfiguran para que adopten un diseño y un esquema de conexión interno
 
 ### ¿Qué es una FPGA?
 
@@ -38,6 +39,8 @@ Las FPGAs no se programa, se reconfiguran para que adopten un diseño y un esque
 ![](https://github.com/Obijuan/open-fpga-verilog-tutorial/raw/master/tutorial/ICESTICK/T00-Intro/images/fpga-config1.png)
 
 Los circuitos se describen usando un **Lenguaje de Descripción de Hardware** (HDL) como Verilog o VHDL. A partir de ellos se genera un bitstream que describe las uniones entre los elementos usados.
+
+Llamamos **síntesis** a todo el proceso que nos lleva desde el diseño en código fuente hasta la configuración de la FPGA. Estas son las fases:
 
 ![](https://github.com/Obijuan/open-fpga-verilog-tutorial/raw/master/tutorial/ICESTICK/T00-Intro/images/fpga-bitstream1.png)
 
@@ -53,7 +56,17 @@ Nos permiten sustituir a muchos circuitos digitales discretos necesarios en disp
 
 Podemos modificar el comportamiento de una FPGA cambiando su bitstream, por tanto podríamos resolver errores y aportar mejoras a un diseño hardware.
 
+### Comparación con un procesador Von Newman
+
+* Con una FPGA podemos crear un procesador donde configuremos la cantidad de RAM, la cantidad de I/O, número de UART, incluso modificarlos si es necesarios
+
+* Piensa en un programa Arduino que reproduce un sonido. Ahora intenta hacer un programa que reproduzca 2 sonidos a la vez, o tres... con una FPGA basta con copiar+pegar el hardware
+
+* Facilitan enórmemente la paralelización del hardware.
+
 ### Un poco de historia
+
+Hasta hace poco la única forma de trabajar con una FPGA era usando el sortware que proporcionaba el fabricante.
 
 En **mayo de 2015** ocurrió un **hito histórico**: se tuvieron por primera vez todas las herramientas necesarias para **generar el bitstream** a partir de **código en Verilog** usando **sólo software libre**, gracias al [proyecto icestorm](http://www.clifford.at/icestorm/), liderado por **Clifford Wolf**.  A partir de ese momento,ya tenemos herramientas que pertenecen al **patrimonio tecnológico de la humanidad** para trabajar con FPGAs, y poder desarrollar hardware usando sólo herramientas de este patrimonio
 
