@@ -174,6 +174,7 @@ Paquete python que utiliza las herramientas Icestorm
 
     sudo pip install -U apio
 
+(si no tenemos instalado pip ... sudo apt install python-pip)
 (instalación global, se puede hacer también local con virtualenv)
 
 Apio incluye sus propios drivers del chip FTDI, necesarios para su buen funcionamiento.
